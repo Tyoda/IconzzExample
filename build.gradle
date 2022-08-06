@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven { url "https://gotti.no-ip.org/maven/repository" }
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    compileOnly 'org.gotti.wurmunlimited:server-modlauncher:0.45'
+    compileOnly 'com.github.Tyoda:Iconzz:0.1'
+}
